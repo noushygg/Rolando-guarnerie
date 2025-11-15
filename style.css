@@ -1,0 +1,167 @@
+/* =========================
+   STYLE GLOBAL
+========================= */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #fcf3e8; /* Beige très clair */
+    color: #333333; /* Texte principal */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================
+   TITRES
+========================= */
+h1, h2 {
+    color: #d69e72; /* Bronze / marron chaud */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    max-width: 700px;
+    margin: 10px auto;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+a {
+    color: #c49b6e; /* Doré clair */
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   HEADER PREMIUM
+========================= */
+header {
+    background: linear-gradient(135deg, #f9f3eb, #e6d2b5); /* Dégradé doré clair */
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #8b5e3c;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+}
+
+header p {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #5c3d26;
+    margin-bottom: 20px;
+}
+
+/* Ligne décorative sous le header */
+header::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #c49b6e;
+    margin: 20px auto 0 auto;
+    border-radius: 2px;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 0;
+    margin-top: 15px;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    font-weight: bold;
+    color: #8b5e3c;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #c49b6e;
+    color: #fff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+.profile-image {
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   GALERIE DE CRÉATIONS
+========================= */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.gallery-item {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+/* =========================
+   SECTION CONTACT
+========================= */
+#contact {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff7f0;
+    margin-top: 40px;
+    border-top: 2px solid #e0d7c5;
+}
+
+#contact a {
+    font-weight: bold;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff7f0;
+    border-top: 2px solid #e0d7c5;
+    color: #8b5e3c;
+    font-size: 0.9rem;
+}
